@@ -27,16 +27,22 @@
       --social-bg: #111111;
       --social-text: #ffffff;
     }
-    html { font-size: 16px; }
+    html { 
+      font-size: 16px;
+      display: flex;
+      justify-content: center;
+      background: var(--bg);
+    }
     body {
       font-family: 'Noto Sans', sans-serif;
-      background: var(--bg);
+      background: var(--gold);
       color: var(--text);
       min-height: 100vh;
       min-height: 100dvh;
       display: flex;
       justify-content: center;
       -webkit-font-smoothing: antialiased;
+      max-width: 480px;
     }
     .page {
       width: 100%;
