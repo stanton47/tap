@@ -109,6 +109,42 @@
       box-shadow: 0 4px 16px rgba(0,0,0,0.25);
     }
     .add-contact svg { width: 18px; height: 18px; fill: currentColor; }
+    .hero-actions {
+      display: flex;
+      gap: 0.75rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+    
+    .hero-actions a {
+      flex: 1;
+      min-width: 10rem;
+    }
+    
+    .hero-instagram {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    
+      background: rgba(255,255,255,0.92);
+      color: var(--dark);
+      text-decoration: none;
+    
+      padding: 0.65rem 1.75rem;
+      border-radius: 100px;
+      font-size: 0.9rem;
+      font-weight: 700;
+    
+      border: 2px solid rgba(0,0,0,0.12);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    
+    .hero-instagram:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+    }
     .socials {
       display: flex;
       flex-direction: column;
@@ -190,27 +226,34 @@
       <img class="avatar animate-in" src="https://static.myqrcode.mobi/user-media-prod/7A522E6D-4619-4E6D-8510-7B69922AFB51_2ecba73b_ms4xlt" alt="Stanton Valentino">
       <h1 class="animate-in delay-1">Stanton Valentino</h1>
       <p class="subtitle animate-in delay-2">AI Strategist + Laser Goblin</p>
-      <a class="add-contact animate-in delay-3" href="stanton-valentino.vcf" download>
-        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/></svg>
-        Add Contact
-      </a>
+      <div class="hero-actions animate-in delay-3">
+        <a class="add-contact" href="stanton-valentino.vcf" download>
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/></svg>
+          Add Contact
+        </a>
+      
+        <a class="hero-instagram" href="https://instagram.com/stanton.valentino" target="_blank" rel="noopener">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="19.995" cy="19.995" r="16.665" fill="url(#instagram-gradient-tap)"></circle><path d="M20 24.846A4.85 4.85 0 0 1 15.154 20 4.85 4.85 0 0 1 20 15.154 4.85 4.85 0 0 1 24.848 20 4.85 4.85 0 0 1 20 24.846m0-8.308A3.466 3.466 0 0 0 16.54 20 3.465 3.465 0 0 0 20 23.462 3.465 3.465 0 0 0 23.463 20 3.466 3.466 0 0 0 20 16.538m5.193-.691a1.038 1.038 0 1 0 0-2.077 1.038 1.038 0 0 0 0 2.077" fill="#fff"></path><path d="M24.154 29h-8.308A4.85 4.85 0 0 1 11 24.154v-8.308A4.85 4.85 0 0 1 15.846 11h8.308A4.85 4.85 0 0 1 29 15.846v8.308A4.85 4.85 0 0 1 24.154 29m-8.308-16.615a3.466 3.466 0 0 0-3.461 3.461v8.308a3.466 3.466 0 0 0 3.461 3.461h8.308a3.466 3.466 0 0 0 3.461-3.461v-8.308a3.466 3.466 0 0 0-3.461-3.461z" fill="#fff"></path><defs><radialGradient id="instagram-gradient-tap" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(15.72 36.684)scale(41.5471)"><stop stop-color="#FD5"></stop><stop offset="0.328" stop-color="#FF543F"></stop><stop offset="0.348" stop-color="#FC5245"></stop><stop offset="0.504" stop-color="#E64771"></stop><stop offset="0.643" stop-color="#D53E91"></stop><stop offset="0.761" stop-color="#CC39A4"></stop><stop offset="0.841" stop-color="#C837AB"></stop></radialGradient></defs></svg>
+          Instagram
+        </a>
+      </div>
     </div>
     <div class="socials">
-      <a class="social-link animate-in delay-4" href="https://instagram.com/stanton.valentino" target="_blank" rel="noopener">
+      <a class="social-link animate-in delay-4" style="display:none;" href="https://instagram.com/stanton.valentino" target="_blank" rel="noopener">
         <div class="social-icon">
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="19.995" cy="19.995" r="16.665" fill="url(#instagram-gradient-tap)"></circle><path d="M20 24.846A4.85 4.85 0 0 1 15.154 20 4.85 4.85 0 0 1 20 15.154 4.85 4.85 0 0 1 24.848 20 4.85 4.85 0 0 1 20 24.846m0-8.308A3.466 3.466 0 0 0 16.54 20 3.465 3.465 0 0 0 20 23.462 3.465 3.465 0 0 0 23.463 20 3.466 3.466 0 0 0 20 16.538m5.193-.691a1.038 1.038 0 1 0 0-2.077 1.038 1.038 0 0 0 0 2.077" fill="#fff"></path><path d="M24.154 29h-8.308A4.85 4.85 0 0 1 11 24.154v-8.308A4.85 4.85 0 0 1 15.846 11h8.308A4.85 4.85 0 0 1 29 15.846v8.308A4.85 4.85 0 0 1 24.154 29m-8.308-16.615a3.466 3.466 0 0 0-3.461 3.461v8.308a3.466 3.466 0 0 0 3.461 3.461h8.308a3.466 3.466 0 0 0 3.461-3.461v-8.308a3.466 3.466 0 0 0-3.461-3.461z" fill="#fff"></path><defs><radialGradient id="instagram-gradient-tap" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(15.72 36.684)scale(41.5471)"><stop stop-color="#FD5"></stop><stop offset="0.328" stop-color="#FF543F"></stop><stop offset="0.348" stop-color="#FC5245"></stop><stop offset="0.504" stop-color="#E64771"></stop><stop offset="0.643" stop-color="#D53E91"></stop><stop offset="0.761" stop-color="#CC39A4"></stop><stop offset="0.841" stop-color="#C837AB"></stop></radialGradient></defs></svg>
         </div>
         <div class="social-info"><span class="social-name">Instagram</span><span class="social-handle">@stanton.valentino</span></div>
         <span class="social-arrow">›</span>
       </a>
-      <a class="social-link animate-in delay-5" href="https://linkedin.com/in/stantonvalentino" target="_blank" rel="noopener">
+      <a class="social-link animate-in delay-4" href="https://linkedin.com/in/stantonvalentino" target="_blank" rel="noopener">
         <div class="social-icon">
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 3.333a16.667 16.667 0 1 0 0 33.334 16.667 16.667 0 0 0 0-33.334" fill="#0288D1"></path><path d="M11.667 15.833H15v12.5h-3.333zm1.657-1.666h-.019c-.995 0-1.638-.742-1.638-1.668 0-.946.663-1.666 1.676-1.666 1.014 0 1.638.72 1.657 1.666 0 .926-.643 1.668-1.676 1.668m15.843 6.25a4.583 4.583 0 0 0-8.333-2.63v-1.954H17.5v12.5h3.334v-6.666a2.5 2.5 0 1 1 5 0v6.666h3.333z" fill="#fff"></path></svg>
         </div>
         <div class="social-info"><span class="social-name">LinkedIn</span><span class="social-handle">Stanton Valentino</span></div>
         <span class="social-arrow">›</span>
       </a>
-      <a class="social-link animate-in delay-6" href="https://snapchat.com/add/xantnost" target="_blank" rel="noopener">
+      <a class="social-link animate-in delay-5" href="https://snapchat.com/add/xantnost" target="_blank" rel="noopener">
         <div class="social-icon">
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M36.6664 19.9843C36.6755 29.1885 29.2197 36.6577 20.0155 36.6668C10.8113 36.676 3.34218 29.2202 3.33302 20.016C3.32385 10.8118 10.7797 3.34267 19.9839 3.3335C29.188 3.32434 36.6572 10.7802 36.6664 19.9843Z" fill="#FEDA01"></path><path d="M19.4941 29.0059C20.1087 29.0059 21.1842 28.783 21.968 28.4002C23.2077 27.7946 24.4524 27.7946 25.0719 27.7946C25.6915 27.7946 25.6915 26.5826 25.6915 26.5826C26.6763 26.4067 27.218 26.1271 27.7568 25.6862C28.1327 25.3782 28.0449 24.9352 27.6145 24.7061C25.5591 23.6104 24.4468 20.6963 24.4468 20.6963L26.8286 19.24C27.2208 18.9527 27.3801 18.4523 27.2258 17.9975C27.0268 17.414 26.3811 17.0991 25.7849 17.2943L24.4489 17.8279V15.9161C24.4489 13.2416 22.2314 11.0059 19.4956 11.0059H19.4927C16.7569 11.0059 14.5394 13.2416 14.5394 15.9161V17.8286L13.2034 17.295C12.6065 17.0998 11.9615 17.4147 11.7625 17.9982C11.6075 18.4523 11.7675 18.9527 12.1597 19.2407L14.5415 20.697C14.5415 20.697 13.4299 23.6104 11.3738 24.7068C10.9433 24.9359 10.8556 25.3796 11.2315 25.6869C11.7696 26.1278 12.312 26.4074 13.2968 26.5832C13.2968 26.5832 13.2968 27.7952 13.9163 27.7952C14.5359 27.7952 15.7806 27.7952 17.0203 28.4009C17.8041 28.783 18.8796 29.0059 19.4941 29.0059Z" fill="white"></path></svg>
         </div>
@@ -219,7 +262,7 @@
       </a>
     </div>
     <div class="sections">
-      <div class="card animate-in delay-5">
+      <div class="card animate-in delay-4">
         <div class="card-header" onclick="this.parentElement.classList.toggle('open')">
           <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.2 2.2z"/></svg></div>
           <span class="card-title">Contact</span>
@@ -231,7 +274,7 @@
           <div class="field"><div class="field-icon"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z"/></svg></div><div><div class="field-label">Location</div><div class="field-value"><a href="https://www.google.com/maps/place/Chicago,+IL" target="_blank" rel="noopener">Chicago, IL</a></div></div></div>
         </div></div>
       </div>
-      <div class="card animate-in delay-6">
+      <div class="card animate-in delay-5">
         <div class="card-header" onclick="this.parentElement.classList.toggle('open')">
           <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"/></svg></div>
           <span class="card-title">Company</span>
@@ -242,7 +285,7 @@
           <div class="field"><div class="field-icon"><svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg></div><div><div class="field-label">Title</div><div class="field-value">Sr. AI &amp; Creative Technology Strategist</div></div></div>
         </div></div>
       </div>
-      <div class="card animate-in delay-7">
+      <div class="card animate-in delay-6">
         <div class="card-header" onclick="this.parentElement.classList.toggle('open')">
           <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zM6 20V4h7v5h5v11H6z"/></svg></div>
           <span class="card-title">Summary</span>
@@ -254,7 +297,7 @@
         </div></div>
       </div>
     </div>
-    <div class="footer">stanton47.github.io/tap</div>
+    <div class="footer">stanton47.github.io/tap ♥ LAZER</div>
   </div>
 </body>
 </html>
